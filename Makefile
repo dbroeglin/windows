@@ -76,7 +76,7 @@ GENERALIZE ?= false
 HEADLESS ?= false
 ifndef SHUTDOWN_COMMAND
 ifeq ($(GENERALIZE),true)
-	SHUTDOWN_COMMAND ?= C:/Windows/System32/Sysprep/sysprep.exe /generalize /shutdown /oobe /unattend:A:/Autounattend.xml
+	SHUTDOWN_COMMAND ?= c:/windows/system32/sysprep/sysprep.exe /generalize /shutdown /oobe /unattend:C:/Windows/Temp/Autounattend_sysprep.xml
 else
 	SHUTDOWN_COMMAND ?= shutdown /s /t 10 /f /d p:4:1 /c Packer_Shutdown
 endif

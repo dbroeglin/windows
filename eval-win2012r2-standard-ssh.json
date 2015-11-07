@@ -166,7 +166,12 @@
         "rm -f /tmp/script.bat"
       ],
       "type": "shell"
-    }
+    },
+    {
+      "type": "file",
+      "source": "script/Autounattend_sysprep.xml",
+      "destination": "C:/Windows/Temp/Autounattend_sysprep.xml"
+     }
   ],
   "variables": {
     "cm": "chef",
