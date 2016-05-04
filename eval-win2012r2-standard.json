@@ -146,6 +146,11 @@
   ],
   "provisioners": [
     {
+      "type": "file",
+      "source": "script/Autounattend_sysprep.xml",
+      "destination": "C:/Windows/Temp/Autounattend_sysprep.xml"
+    },
+    {
       "environment_vars": [
         "CM={{user `cm`}}",
         "CM_VERSION={{user `cm_version`}}",
@@ -158,7 +163,8 @@
         "script/clean.bat",
         "script/ultradefrag.bat",
         "script/uninstall-7zip.bat",
-        "script/sdelete.bat"
+        "script/sdelete.bat",
+        "script/delayed_winrm.bat"
       ],
       "type": "windows-shell"
     }

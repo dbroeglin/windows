@@ -6,12 +6,12 @@
 
 :: Uncomment the following to echo commands as they are run
 :: Default: (unset)
-:: set PACKER_DEBUG=1
+set PACKER_DEBUG=1
 
 :: Uncomment the following to define the directory where scripts/save-logs.cmd
 :: will save the installation logs
 :: Default: z:\c\packer_logs
-:: set PACKER_LOG_DIR=z:\c\packer_logs
+set PACKER_LOG_DIR=c:\temp\packer_logs
 
 :: Uncomment the following to change the pagefile size in MB as set by
 :: floppy/pagefile.bat
@@ -26,7 +26,7 @@
 :: Uncomment the following to pause if a script run by
 :: floppy/00-run-all-scripts.cmd returns a non-zero exit value
 :: Default: (unset)
-:: set PACKER_PAUSE_ON_ERROR=1
+set PACKER_PAUSE_ON_ERROR=1
 
 :: Uncomment the following to shutdown if a script run by
 :: floppy/00-run-all-scripts.cmd returns a non-zero exit value
